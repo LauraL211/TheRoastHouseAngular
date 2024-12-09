@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-home-list',
@@ -6,6 +6,8 @@ import { Component} from '@angular/core';
   styleUrl: './home-list.component.css'
 })
 
-export class HomeListComponent{
+export class HomeListComponent implements OnInit{
  name = "Lola Bunny";
+ constructor() {}
+ ngOnInit() {}
 }
